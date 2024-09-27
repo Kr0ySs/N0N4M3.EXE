@@ -48,7 +48,7 @@ unlocking = pygame.mixer.Sound('audio/unlocking.wav')
 os.system("cls")
 os.system("color 6")
 
-print('''
+escrever('''
                         Olá, seja bem vindo ao N0N4M3.EXE, esse é um jogo Text-Based feito totalmente em Python!
                 Antes do jogo começar, vou dar algumas dicas para que a sua experiência em N0N4M3.EXE seja a melhor possível!
 

@@ -295,6 +295,7 @@ sleep(3)
 os.system("cls")
 os.system("color f")
 
+# PRIMEIRA ESCOLHA
 
 print('''
                                                                                                         Escolha com cuidado:

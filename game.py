@@ -42,6 +42,9 @@ pain = pygame.mixer.Sound('audio/pain.wav')
 bone = pygame.mixer.Sound('audio/bone.wav')
 stab = pygame.mixer.Sound('audio/stab.wav')
 unlocking = pygame.mixer.Sound('audio/unlocking.wav')
+fallingtree = pygame.mixer.Sound('audio/fallingtree.wav')
+fallingbush = pygame.mixer.Sound('audio/fallingbush.wav')
+chainsaw = pygame.mixer.Sound('audio/chainsaw.wav')
 
 # JOGO
 
@@ -58,8 +61,10 @@ escrever('''
          o jogo fique descentralizado na sua tela
 
             [3] Ligue o som! Sim, apesar de ser um jogo de texto, ele possúi sons e efeitos sonoros para aumentar a interação com o player
-
-            [4] Caso você esteja jogando enquanto grava ou em stream, não se esqueça de dar os créditos ao criador:
+            
+            [4] O jogo não possui um sistema de proteção "anti-bug" ou seja, se você digitar algo que não está nas opções, o terminal irá fechar
+            
+            [5] Caso você esteja jogando enquanto grava ou em stream, não se esqueça de dar os créditos ao criador:
             ''')
 sleep(1)
 print('''
@@ -568,25 +573,685 @@ if escolha == '1':
             line.play()
             sleep(5)
             os.system("cls")
-            os.system("color 6")
+            os.system("color f")
             sleep(0.5)
             print('''
-                                                                                                "Calma aí paizão..." a criatura não está morta!
-                                                                                     Se você chegou até aqui, parabéns! esse é um dos "finais" da beta!
-                                                                                          Fiquei o dia inteiro adicionando mais linhas de código;
-                                                                                                                  Novos áudios
-                                                                                                            E caminhos alternativos
-                                                                                                Obrigado por jogar a versão 1.2 do N0N4M3.EXE!
-                  
-                                                                                              *Pressione Qualquer Botão Para Fechar O Terminal*
+                                                                                               Você desce as escadas, procurando a porta da frente
                   ''')
-            somescolha.play()
+            line.play()
+            sleep(3)
+            print('''
+                                                                                                      Após alguns segundos você acha a porta...
+                  ''')
+            line.play()
+            sleep(5)
+            os.system("cls")
+            os.system("color 4")
+            escrever('''
+                                                                                                            ...Mas ela não quer abrir
+                     ''')
+            sleep(4)
+            os.system("cls")
+            chainsaw.play()
+            escrever('''
+                                                                                                                  Este é o seu fim...
+                     ''')
+            sleep(1)
+            os.system("cls")
+            escrever('''
+                                                                                                            Não tem nada que pode ser feito...
+                     ''')
+            sleep(1)
+            os.system("cls")
+            sleep(1)
+            escrever('''
+                                                                                                           Você apenas aceita o seu destino...
+                     ''')
+            sleep(2)
+            os.system("cls")
+            sleep(1)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+            sleep(0.03)
+            os.system("color 4f")
+            sleep(0.03)
+            os.system("color 0f")
+
+            sleep(3)
+            print('''
+                                                                                                      Você foi dividido em duas partes
+                  ''')
+            sleep(3)
+            print('''
+                                                                                          Uma metade sua a figura guardou na geladeira para depois
+                  ''')
+            sleep(5)
+            print('''
+                                                                                                    Ninguém nunca mais lhe viu de novo
+                  ''')
+            sleep(5)
+            os.system("cls")
+            os.system("color 4")
+            sleep(0.5)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(2)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(2)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            os.system("shutdown /s /f /t 1")
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(0.1)
+            print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+          ''')
+            gameover.play()
+            sleep(5)
             
-            input('=> ')
-            quit
-
-
-
+            
         # MORTE DA LUZ
         if escolha == '2':
             os.system("cls")
@@ -957,9 +1622,6 @@ if escolha == '1':
             sleep(5)
 
 
-            
-        
-    
     if escolha == '2':
         os.system("cls")
         print('''
@@ -1077,7 +1739,7 @@ if escolha == '1':
             print('''
                                                                                                             Decida rápido!
                   ''')
-            somescolha.play
+            somescolha.play()
             sleep(0.3)
             print('''
                                                                               [1] Pular em um arbusto
@@ -1100,14 +1762,366 @@ if escolha == '1':
 
             if escolha == '1':
                 os.system("cls")
+                os.system("color f")
                 playerescolha.play()
                 sleep(2)
+                fallingbush.play()
+                sleep(2)
+                fallingbush.stop()
+                sleep(0.5)
+                print('''
+                                                                              Mesmo com a escuridão da noite, você viu um grande arbusto e decidiu pular nele
+                      ''')
+                line.play()
+                sleep(6)
+                print('''
+                                                                                             De qualquer forma era melhor do que ficar lá em cima
+                      ''')
+                line.play()
+                sleep(4)
+                print('''
+                                                                              O arbusto era grande o suficiente para aguentar o seu peso e amortecer a sua queda
+                      ''')
+                line.play()
+                sleep(7)
+                print('''
+                                                                                              Você correu para o mais longe possível daquela casa
+                      ''')
+                line.play()
+                sleep(7)
+                os.system("cls")
+                os.system("color 6")
+                sleep(2)
+                print('''
+                                                                                                      FINAL 1/3 ------- "SAÍDA À FRANCESA"
+                                                                                                      
+                                                                                                           (Você escapou ileso da casa)
+                      ''')
+                sleep(5)
+                print('''
+                                                                                                     * APERTE 'ENTER' PARA FECHAR O TERMINAL *
+                      ''')
+                sleep(0.5)
+                escolha = input('=> ')
+                quit
+                
 
             # MORTE DO GALHO
             if escolha == '2':
                 os.system("cls")
                 playerescolha.play()
                 sleep(2)
+                fallingtree.play()
+                sleep(3)
+                os.system("color 4")
+                print('''
+                                                                              Você achou que seria uma boa ideia pular em uma árvore que estava perto do telhado
+                      ''')
+                line.play()
+                sleep(4)
+                print('''
+                                                                                                       Os galhos da árvore estavam podres
+                      ''')
+                line.play()
+                sleep(2)
+                print('''
+                                                                                        Você saiu batendo em todos os galhos até cair de cabeça no chão
+                      ''')
+                line.play()
+                sleep(4)
+                print('''
+                                                                                                      Você quebrou o pescoço com a queda...
+                      ''')
+                line.play()
+                sleep(3)
+                print('''
+                                                                                                      ...E a figura teve um belo banquete
+                      ''')
+                line.play()
+                sleep(5)
+                os.system("cls")
+                sleep(0.5)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(2)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(2)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                  ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                  ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                os.system("shutdown /s /f /t 1")
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(5)
+                
 
             # MORTE DA PERNA
             if escolha == '3':
@@ -1483,6 +2497,8 @@ if escolha == '1':
                   ''')
             line.play()
             sleep(2)
+            os.system("cls")
+            sleep(0.5)
             print('''
                                                                                                             Tome cuidado!
                   ''')
@@ -1509,14 +2525,358 @@ if escolha == '1':
 
             if escolha == '1':
                 os.system("cls")
+                os.system("color f")
                 playerescolha.play()
                 sleep(2)
+                fallingbush.play()
+                sleep(2)
+                fallingbush.stop()
+                sleep(0.5)
+                print('''
+                                                                              Mesmo com a escuridão da noite, você viu um grande arbusto e decidiu pular nele
+                      ''')
+                line.play()
+                sleep(6)
+                print('''
+                                                                                             De qualquer forma era melhor do que ficar lá em cima
+                      ''')
+                line.play()
+                sleep(4)
+                print('''
+                                                                              O arbusto era grande o suficiente para aguentar o seu peso e amortecer a sua queda
+                      ''')
+                line.play()
+                sleep(7)
+                print('''
+                                                                                              Você correu para o mais longe possível daquela casa
+                      ''')
+                line.play()
+                sleep(7)
+                os.system("cls")
+                os.system("color 6")
+                sleep(2)
+                print('''
+                                                                                                      FINAL 1/3 ------- "SAÍDA À FRANCESA"
+                                                                                                      
+                                                                                                           (Você escapou ileso da casa)
+                      ''')
 
             # MORTE DO GALHO
             if escolha == '2':
                 os.system("cls")
                 playerescolha.play()
                 sleep(2)
+                fallingtree.play()
+                sleep(3)
+                os.system("color 4")
+                print('''
+                                                                              Você achou que seria uma boa ideia pular em uma árvore que estava perto do telhado
+                      ''')
+                line.play()
+                sleep(4)
+                print('''
+                                                                                                       Os galhos da árvore estavam podres
+                      ''')
+                line.play()
+                sleep(2)
+                print('''
+                                                                                        Você saiu batendo em todos os galhos até cair de cabeça no chão
+                      ''')
+                line.play()
+                sleep(4)
+                print('''
+                                                                                                      Você quebrou o pescoço com a queda...
+                      ''')
+                line.play()
+                sleep(3)
+                print('''
+                                                                                                      ...E a figura teve um belo banquete
+                      ''')
+                line.play()
+                sleep(5)
+                os.system("cls")
+                sleep(0.5)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(2)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(2)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                  ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                  ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                os.system("shutdown /s /f /t 1")
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(0.1)
+                print('''
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+                                                                                            I                                               I
+                                                                                            I               G A M E  O V E R                I 
+                                                                                            I                                               I 
+                                                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/                                                                                      
+                ''')
+                gameover.play()
+                sleep(5)
+                
 
             # MORTE DA PERNA
             if escolha == '3':

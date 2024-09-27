@@ -27,28 +27,28 @@ pygame.init()
 
 # BIBLIOTECA DE AUDIO
 
-playerescolha = pygame.mixer.Sound('playerescolha.wav')
-somescolha = pygame.mixer.Sound('choose.wav')
-line = pygame.mixer.Sound('normalline.wav')
-menu = pygame.mixer.Sound('menu.wav')
-linhanova = pygame.mixer.Sound('darkline.wav')
-gameover = pygame.mixer.Sound('gameover.wav')
-gameover2 = pygame.mixer.Sound('gameover2.wav')
-scream = pygame.mixer.Sound('scream.wav')
-glassbreak = pygame.mixer.Sound('glass.wav')
-wind = pygame.mixer.Sound('windsfx.wav')
-roar = pygame.mixer.Sound('roar.wav')
-pain = pygame.mixer.Sound('pain.wav')
-bone = pygame.mixer.Sound('bone.wav')
-stab = pygame.mixer.Sound('stab.wav')
-unlocking = pygame.mixer.Sound('unlocking.wav')
+playerescolha = pygame.mixer.Sound('audio/playerescolha.wav')
+somescolha = pygame.mixer.Sound('audio/choose.wav')
+line = pygame.mixer.Sound('audio/normalline.wav')
+menu = pygame.mixer.Sound('audio/menu.wav')
+linhanova = pygame.mixer.Sound('audio/darkline.wav')
+gameover = pygame.mixer.Sound('audio/gameover.wav')
+gameover2 = pygame.mixer.Sound('audio/gameover2.wav')
+scream = pygame.mixer.Sound('audio/scream.wav')
+glassbreak = pygame.mixer.Sound('audio/glass.wav')
+wind = pygame.mixer.Sound('audio/windsfx.wav')
+roar = pygame.mixer.Sound('audio/roar.wav')
+pain = pygame.mixer.Sound('audio/pain.wav')
+bone = pygame.mixer.Sound('audio/bone.wav')
+stab = pygame.mixer.Sound('audio/stab.wav')
+unlocking = pygame.mixer.Sound('audio/unlocking.wav')
 
 # JOGO
 
 os.system("cls")
 os.system("color 6")
 
-escrever('''
+print('''
                         Olá, seja bem vindo ao N0N4M3.EXE, esse é um jogo Text-Based feito totalmente em Python!
                 Antes do jogo começar, vou dar algumas dicas para que a sua experiência em N0N4M3.EXE seja a melhor possível!
 

@@ -23,6 +23,40 @@ def escreverlento(texto):
         print(char, end="", flush=True)
         sleep(0.1)
 
+def loop_gameover():
+      frames = [
+            '''
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/            
+I                                               I
+I               G A M E  O V E R                I 
+I                                               I 
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ 
+            '''
+      ]
+
+      while True:
+          for quadro in frames:
+              os.system("cls")
+              print("\n" * 5)
+              print(quadro)
+              gameover.play()
+              sleep(0.1)
+          
+
+def loop_inicial_1s():
+      frames = [
+        '''
+FeChE eStE jOgO aGoRa!
+        '''
+      ]
+
+      for i in range(4):
+          for quadro in frames:
+              print("\n" * 5)
+              print(quadro)
+              linhanova.play()
+              sleep(1)
+
 pygame.init()
 
 # BIBLIOTECA DE AUDIO

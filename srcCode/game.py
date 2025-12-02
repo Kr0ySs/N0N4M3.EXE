@@ -7,7 +7,9 @@ from functions import (
                        sleep, 
                        # SISTEMAS
                        os, 
-                       pygame, 
+                       pygame,
+                       punicao,
+                       punicao_final, 
                        # AUDIOS
                        somescolha, 
                        line, 
@@ -173,15 +175,7 @@ os.system("color f")
 
 # PRIMEIRA ESCOLHA
 
-functions.titulo_primeira_escolha()
-
-functions.escolha_1()
-
-functions.escolha_2()
-
-functions.escolha_3()
-
-functions.cursor_escolha_1()
+functions.cena_primeira_escolha()
 
 print('''
                                                                               [1] Fingir que está dormindo

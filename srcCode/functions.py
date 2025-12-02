@@ -53,7 +53,7 @@ I                                               I
 def loop_inicial_1s():
       frames = [
         '''
-FeChE eStE jOgO aGoRa!
+                                                                            FeChE eStE jOgO aGoRa!
         '''
       ]
       for i in range(4):
@@ -66,7 +66,7 @@ FeChE eStE jOgO aGoRa!
 def loop_inicial_500ms():
       frames = [
           '''
-FeChE eStE jOgO aGoRa!
+                                                                            FeChE eStE jOgO aGoRa!
           '''
       ]
       for i in range(4):
@@ -79,7 +79,7 @@ FeChE eStE jOgO aGoRa!
 def loop_inicial_50ms():
       frames = [
           '''
-FeChE eStE jOgO aGoRa!
+                                                                            FeChE eStE jOgO aGoRa!
           '''
       ]
       for i in range(12):
@@ -94,11 +94,11 @@ FeChE eStE jOgO aGoRa!
 def titulo_menu():
       frames = [
             '''
-/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/            
-I                                               I
-I              N 0 N 4 M 3 . E X E              I 
-I                                               I 
-/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ 
+                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/            
+                                                            I                                               I
+                                                            I              N 0 N 4 M 3 . E X E              I 
+                                                            I                                               I 
+                                                            /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ 
             '''
       ]
       for quadro in frames:
@@ -108,6 +108,29 @@ I                                               I
               sleep(3)
 
 # PRIMEIRA ESCOLHA
+
+def cena_primeira_escolha():
+     os.system("cls")
+     titulo_primeira_escolha()
+     escolha_1()
+     escolha_2()
+     escolha_3()
+
+     print("=> ", end = "", flush=True)
+     linhanova.play()
+
+     escolha_input = ler_escolha(['1', '2', '3'], limite_erros = 5)
+
+     if escolha_input == '1':
+          return fingir_dormindo
+     elif escolha_input == '2':
+          return esconder
+     elif escolha_input == '3':
+          return gritar_socorro
+     elif escolha_input == 'ABORT':
+          return punicao
+     
+     return None
 
 def titulo_primeira_escolha():
      frames =[
@@ -154,31 +177,19 @@ def escolha_3():
           somescolha.play()
           sleep(2)
 
-def cursor_escolha_1():
-     print("=> ")
-
-     escolha_input = ler_escolha(['1', '2', '3'], limite_erros = 5)
-
-     if escolha_input == '1':
-          return fingir_dormindo
-     elif escolha_input == '2':
-          return esconder
-     elif escolha_input == '3':
-          return gritar_socorro
-     elif escolha_input == 'ABORT':
-          return punicao
-     
 # CHECK DE LEITURA DE ESCOLHAS DO PLAYER
 
-def ler_escolha(opcoes_validas, limite_erros = 0):
+def ler_escolha(opcoes_validas, limite_erros = 5):
      contagem_erros = 0
 
      while True:
           entrada = input('=> ').strip().upper()
+          linhanova.play()
 
           if entrada in opcoes_validas:
                contagem_erros = 0
                return entrada
+          
           else:
                contagem_erros += 1
 

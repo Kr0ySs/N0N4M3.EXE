@@ -1,91 +1,40 @@
-import os
-import pygame
-import time
-from time import sleep
-
-# INICIALIZAÇÃO
-
-os.system("color 6")
-os.system("cls")
-
-def escrever(texto):
-    for char in texto+"\n":
-        print(char, end="", flush=True)
-        sleep(0.035)
-
-def escreverrapido(texto):
-    for char in texto+"\n":
-        print(char, end="", flush=True)
-        sleep(0.01)
-
-def escreverlento(texto):
-    for char in texto+"\n":
-        print(char, end="", flush=True)
-        sleep(0.1)
-
-def loop_gameover():
-      frames = [
-            '''
-/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/            
-I                                               I
-I               G A M E  O V E R                I 
-I                                               I 
-/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ 
-            '''
-      ]
-
-      while True:
-          for quadro in frames:
-              os.system("cls")
-              print("\n" * 5)
-              print(quadro)
-              gameover.play()
-              sleep(0.1)
-          
-
-def loop_inicial_1s():
-      frames = [
-        '''
-FeChE eStE jOgO aGoRa!
-        '''
-      ]
-
-      for i in range(4):
-          for quadro in frames:
-              print("\n" * 5)
-              print(quadro)
-              linhanova.play()
-              sleep(1)
-
-pygame.init()
-
-# BIBLIOTECA DE AUDIO
-
-playerescolha = pygame.mixer.Sound('audio/playerescolha.wav')
-somescolha = pygame.mixer.Sound('audio/choose.wav')
-line = pygame.mixer.Sound('audio/normalline.wav')
-menu = pygame.mixer.Sound('audio/menu.wav')
-linhanova = pygame.mixer.Sound('audio/darkline.wav')
-gameover = pygame.mixer.Sound('audio/gameover.wav')
-gameover2 = pygame.mixer.Sound('audio/gameover2.wav')
-scream = pygame.mixer.Sound('audio/scream.wav')
-glassbreak = pygame.mixer.Sound('audio/glass.wav')
-wind = pygame.mixer.Sound('audio/windsfx.wav')
-roar = pygame.mixer.Sound('audio/roar.wav')
-pain = pygame.mixer.Sound('audio/pain.wav')
-bone = pygame.mixer.Sound('audio/bone.wav')
-stab = pygame.mixer.Sound('audio/stab.wav')
-unlocking = pygame.mixer.Sound('audio/unlocking.wav')
-fallingtree = pygame.mixer.Sound('audio/fallingtree.wav')
-fallingbush = pygame.mixer.Sound('audio/fallingbush.wav')
-chainsaw = pygame.mixer.Sound('audio/chainsaw.wav')
+import functions
+from functions import (
+                       # ESCRITA
+                       escrever, 
+                       escreverlento, 
+                       escreverrapido, 
+                       sleep, 
+                       # SISTEMAS
+                       os, 
+                       pygame, 
+                       # AUDIOS
+                       somescolha, 
+                       line, 
+                       playerescolha, 
+                       line, 
+                       menu,
+                       linhanova,
+                       gameover,
+                       gameover2,
+                       scream,
+                       glassbreak,
+                       wind,
+                       roar,
+                       pain,
+                       bone,
+                       stab,
+                       unlocking,
+                       fallingbush,
+                       fallingtree,
+                       chainsaw)
 
 # JOGO
 
 os.system("cls")
 os.system("color 6")
 
-escrever('''
+escreverrapido('''
                         Olá, seja bem vindo ao N0N4M3.EXE, esse é um jogo Text-Based feito totalmente em Python!
                 Antes do jogo começar, vou dar algumas dicas para que a sua experiência em N0N4M3.EXE seja a melhor possível!
 
@@ -104,18 +53,23 @@ sleep(1)
 print('''
                                                                               Criador: Kr0ySs
       ''')
+somescolha.play()
 sleep(1)
 print('''
                                                                               Discord: kr0yss
       ''')
+somescolha.play()
 sleep(1)
 print('''
                                                                               Twitch : kr0yss
       ''')
+somescolha.play()
 sleep(1)
 print('''
                                                                               YouTube: Kr0ySs
       ''')
+somescolha.play()
+sleep(2)
 escrever('''
                                                       Boa sorte, você vai precisar!
          ''')
@@ -134,136 +88,19 @@ os.system("color 04")
 line.play()
 sleep(2)
 
-print('''
-                                                                                                FeChE eStE jOgO aGoRa!
-      ''')
-linhanova.play()
-sleep(1)
+# LOOP INICIAL
 
-print('''
-                                                                                                FeChE eStE jOgO aGoRa!
-      ''')
-linhanova.play()
-sleep(1)
+functions.loop_inicial_1s()
 
-print('''
-                                                                                                FeChE eStE jOgO aGoRa!
-      ''')
-linhanova.play()
-sleep(1)
+functions.loop_inicial_500ms()
 
-print('''
-                                                                                                FeChE eStE jOgO aGoRa!
-      ''')
-linhanova.play()
-sleep(1)
-
-print('''
-                                                                                                FeChE eStE jOgO aGoRa!
-      ''')
-linhanova.play()
-sleep(0.5)
-
-print('''
-                                                                                                FeChE eStE jOgO aGoRa!
-      ''')
-linhanova.play()
-sleep(0.5)
-
-print('''
-                                                                                                FeChE eStE jOgO aGoRa!
-      ''')
-linhanova.play()
-sleep(0.5)
-
-print('''
-                                                                                                FeChE eStE jOgO aGoRa!
-      ''')
-linhanova.play()
-sleep(0.5)
-
-print('''
-                                                                                                FeChE eStE jOgO aGoRa!
-      ''')
-linhanova.play()
-sleep(0.5)
-
-print('''
-                                                                                                FeChE eStE jOgO aGoRa!
-      ''')
-linhanova.play()
-sleep(0.05)
-
-print('''
-                                                                                                FeChE eStE jOgO aGoRa!
-      ''')
-linhanova.play()
-sleep(0.05)
-
-print('''
-                                                                                                FeChE eStE jOgO aGoRa!
-      ''')
-linhanova.play()
-sleep(0.05)
-
-print('''
-                                                                                                FeChE eStE jOgO aGoRa!
-      ''')
-linhanova.play()
-sleep(0.05)
-
-print('''
-                                                                                                FeChE eStE jOgO aGoRa!
-      ''')
-linhanova.play()
-sleep(0.05)
-
-print('''
-                                                                                                FeChE eStE jOgO aGoRa!
-      ''')
-linhanova.play()
-sleep(0.05)
-
-print('''
-                                                                                                FeChE eStE jOgO aGoRa!
-      ''')
-linhanova.play()
-sleep(0.05)
-
-print('''
-                                                                                                FeChE eStE jOgO aGoRa!
-      ''')
-linhanova.play()
-sleep(0.05)
-
-print('''
-                                                                                                FeChE eStE jOgO aGoRa!
-      ''')
-linhanova.play()
-sleep(0.05)
-
-print('''
-                                                                                                FeChE eStE jOgO aGoRa!
-      ''')
-linhanova.play()
-sleep(0.05)
+functions.loop_inicial_50ms()
 
 os.system("cls")
 
 sleep(0.5)
 
-print(''' 
-
-                                                                                      /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
-                                                                                      I                                               I
-                                                                                      I              N 0 N 4 M 3 . E X E              I 
-                                                                                      I                                               I 
-                                                                                      /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
-
-      ''')
-menu.play()
-
-sleep(3)
+functions.titulo_menu()  
 
 os.system("cls")
 sleep(2)
@@ -336,12 +173,16 @@ os.system("color f")
 
 # PRIMEIRA ESCOLHA
 
-print('''
-                                                                                                        Escolha com cuidado:
-      ''')
-somescolha.play()
-sleep(0.5)
-print()
+functions.titulo_primeira_escolha()
+
+functions.escolha_1()
+
+functions.escolha_2()
+
+functions.escolha_3()
+
+functions.cursor_escolha_1()
+
 print('''
                                                                               [1] Fingir que está dormindo
       ''')
